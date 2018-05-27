@@ -24,11 +24,11 @@ mysqli should be enabled
  
 First download the project folder and keep it in the root folder.
 
-GO to the server folder.
-
 Create a database.
 
 Run the sql file(messages.sql) in the database
+
+GO to the server folder.
 
 In server folder, open the file config.php.
 

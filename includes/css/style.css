@@ -1,4 +1,5 @@
-    body {
+/* Basic CSS Required for tags*/
+body {
   font-family: 'Saira Extra Condensed',serif;
   padding-top: 54px;
   color: #868e96;
@@ -31,34 +32,25 @@ h1 {
 h2 {
   font-size: 3.5rem;
 }
-
+a 
+{
+  color: #BD5D38;
+}
+a:hover, a:focus, a:active 
+{
+  color: #824027;
+}
+li{
+    list-style: none;
+}
+/* Used for displaying subheading under main title of content*/
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
 }
-
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #BD5D38;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-
-.list-icons {
-  font-size: 3rem;
-}
-
-.list-icons .list-inline-item i:hover {
-  color: #BD5D38;
-}
-
+/* Classes Needed for Navigation Bar (Menus)*/
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
@@ -104,122 +96,90 @@ h2 {
   }
 }
 
-section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
+.bg-primary 
+{
   background-color: #BD5D38 !important;
 }
-
-.text-primary {
+.text-primary 
+{
   color: #BD5D38 !important;
 }
-
-a {
-  color: #BD5D38;
-}
-
-a:hover, a:focus, a:active {
-  color: #824027;
-}
-.mb-auto, .my-auto {
+.mb-auto, .my-auto 
+{
     width: 100%;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
+/* Classes for Word Cloud */
+.tagcloud
+{
+/*    height:300px;*/
+}
+.tag-1
+{
+    font-size: 14px; 
+    color: maroon;
+    font-weight: bold;
+}
+.tag-2
+{
+    font-size: 16px; 
+    color: #FF5733;
+}
+.tag-3
+{
+    font-size: 18px; 
+    color: #7BFF33;
+    font-style: italic;: 
+}
+.tag-4
+{
+    font-size: 20px; 
+    color: #112ACC;
+    font-weight: bold;
+}
+.tag-5
+{
+    font-size: 24px; 
+    color: #B611CC;
+}
+.tag-6
+{
+    font-size: 28px; 
+    color: #CC1130;
+}
+.tag-7
+{
+    font-size: 32px; 
+    color: #007DEF;
+}
+.tag-8
+{
+    font-size: 36px; 
+    color: #CACC11;
+    font-weight: bold;
+}
+/* End Word Cloud */
+.posted 
+{
+    color: #4D5656;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+}
 
-    .tagcloud
-    {
-    /*    height:300px;*/
-    }
-    .tag-1
-    {
-        font-size: 14px; 
-        color: #000000;
-    }
-    .tag-2
-    {
-        font-size: 16px; 
-        color: #FF5733;
-    }
-    .tag-3
-    {
-        font-size: 18px; 
-        color: #7BFF33;
-        font-style: italic;: 
-    }
-    .tag-4
-    {
-        font-size: 20px; 
-        color: #112ACC;
-        font-weight: bold;
-    }
-    .tag-5
-    {
-        font-size: 24px; 
-        color: #B611CC;
-    }
-    .tag-6
-    {
-        font-size: 28px; 
-        color: #CC1130;
-    }
-    .tag-7
-    {
-        font-size: 32px; 
-        color: #007DEF;
-    }
-    .tag-8
-    {
-        font-size: 36px; 
-        color: #CACC11;
-        font-weight: bold;
-    }
+/* For displaying user images in the thread */
+.image-user
+{
+    padding-left: 4px;
+    padding-right: 4px;
+}
 
-    .posted 
-    {
-        color: #4D5656;
-        font-size: 10px;
-        font-weight: bold;
-        padding-left: 10px;
-    }
-    li{
-        list-style: none;
-    }
-    .image-user
-    {
-        padding-left: 4px;
-        padding-right: 4px;
-    }
-
-    /* Important part */
-    .modal-dialog{
-        overflow-y: initial !important
-    }
-    .modal-body{
-        height: 310px;
-        overflow-y: auto;
-    }
+/* Important part to make modal scrollable in case of increased data */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 372px;
+    overflow-y: auto;
+}
