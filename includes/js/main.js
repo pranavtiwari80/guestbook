@@ -44,7 +44,7 @@
     // This would be executed, once user submits the form of id insert_form
     $('#insert_form').on("submit", function(event){  
            event.preventDefault();  
-           if($('#message-text').val() == "")  
+           if($.trim($('#message-text').val()) == "")  
            {  
                 $("#error-message").addClass("alert alert-danger");
                 $("#error-message").html("Please enter your message.");
@@ -77,8 +77,10 @@
       });  
     // This would be called once user put response on some message
     $('#submit_response').on("submit", function(event){  
-           event.preventDefault();  
-           if($('#message-response').val() == "")  
+           event.preventDefault();
+          // alert($.trim($('#message-response').val()));
+             
+           if($.trim($('#message-response').val()) == "")  
            {  
                 $("#error-message1").addClass("alert alert-danger");
                 $("#error-message1").html("Please enter your message.");
