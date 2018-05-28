@@ -28,7 +28,7 @@ Create a database.
 
 Run the sql file(messages.sql) in the database
 
-GO to the server folder.
+GO to the server folder. These are the PHP files, so you need to keep them on server having PHP
 
 In server folder, open the file config.php.
 
