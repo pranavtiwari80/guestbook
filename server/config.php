@@ -1,7 +1,6 @@
 <?php
 //error_reporting("E_ALL");
-//echo $conn = mysqli_connect("localhost", "pranavtwr", 'Welcome2wis!#$&', "sampleassignment") or die("Did not connect");
-//$conn = mysql_connect("localhost", "pranavtwr1", 'Welcome2wis!#$&') or die("Did not connect");
+
 $conn = mysqli_connect("localhost","root","","guestbook") or die("Did not connect");
 
 // Check connection
