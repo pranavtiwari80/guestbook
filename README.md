@@ -44,7 +44,7 @@ In this file, on line 2, change the
 
 var domainurl = "Enter your server URL reaching webservices";
 
-eg var domainurl = "http://yourdomain/server/";
+eg var domainurl = "/server/";
 
 Once all is set up, try to access the index file using server
 
